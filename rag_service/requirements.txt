@@ -1,0 +1,15 @@
+fastapi
+uvicorn[standard]
+asyncpg
+pgvector
+nltk
+numpy
+aiohttp
+requests
+pypdf
+markdownify
+python-dotenv
+watchdog
+passlib[bcrypt]
+python-jose[cryptography]
+python-multipart

@@ -1,0 +1,11 @@
+torch
+torchvision
+torchaudio
+transformers
+datasets
+evaluate
+seqeval
+numpy
+scikit-learn
+peft
+pytest

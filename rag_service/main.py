@@ -9,23 +9,6 @@ from typing import List, Dict, Any
 import sys
 from contextlib import asynccontextmanager
 
-try:
-    import nltk
-    from nltk.tokenize import sent_tokenize
-    nltk.data.find('tokenizers/punkt')
-except LookupError:
-    nltk.download('punkt')
-except ImportError:
-    print("NLTK не найден. Пожалуйста, установите его в ваше окружение: pip install nltk")
-    sys.exit(1)
-
-
-try:
-    import numpy as np
-except ImportError:
-    print("NumPy не найден. Пожалуйста, установите его в ваше окружение: pip install numpy")
-    sys.exit(1)
-
 from app.giga_chat import GigaChatAPI
 
 logging.basicConfig(level=logging.INFO)
